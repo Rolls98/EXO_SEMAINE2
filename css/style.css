@@ -147,9 +147,15 @@ label{
         width:80%;
     }
 
+    .bg_main{
+        padding:5px 15px;
+    }
+
     #form_sign {
+        max-width: 980px;
         width: 100%;
         padding: 15px 30px;
+       
     }
 
     #form_sign input[type="email"],
