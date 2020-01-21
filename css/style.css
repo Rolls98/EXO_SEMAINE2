@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 8px;
+    float: left;
+}
+
+.dis,
+.active {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+nav {
+    margin-top: -50px;
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.first {
+    background-color: yellow;
+    height: 70px;
+}
+
+.bg_main {
+    background: url("../female-programmer-typing-source-codes-260nw-705197296.webp") no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding: 25px 50px;
+}
+
+#form_sign {
+    background-color: white;
+    width: 500px;
+    padding: 25px  60px ;
+    border-radius: 10px;
+}
+
+#form_sign input[type="text"]::placeholder,
+#form_sign input[type="password"]::placeholder,
+#section_right input[type="text"]::placeholder,
+#section_right input[type="password"]::placeholder,
+#form_sign input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#form_sign input[type="text"],
+#form_sign input[type="password"] {
+    width: 350px;
+    height: 30px;
+    background-color: #2e355e;
+    margin-bottom: 10px;
+    border: none;
+    padding: 20px 15px;
+    font-size: 18px;
+    margin-right: 15px;
+    color: white;
+
+}
+
+
+#form_sign input[type="email"] {
+    width: 350px;
+    height: 30px;
+    border:none;
+    background-color: #2e355e;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    padding: 20px 15px;
+    color: white;
+}
+
+label{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#form_sign #btn_fb,
+#form_sign input[type="submit"] {
+    
+    border-radius: 15px;
+    
+}
+
+#form_sign input[type="submit"] {
+    width: 220px;
+    height: 40px;
+    border:none;
+    margin-right: 18px;
+    margin-top: -5px;
+    background-color: yellow;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-top:2px;
+}
+
+.checkpass{
+    margin-left:15px;
+}
+
+.checkpass ul{
+    margin-left:15px;
+    margin-bottom:10px;
+}
+.checkpass p{
+    margin-left:-10px;
+}
+
+.errorMsg{
+    display: block;
+    margin-top:-5px;
+    margin-bottom:5px;
+    color:red;
+}
+
+
+@media (max-width:595px){
+    #form_sign input[type="submit"]{
+        width:80%;
+    }
+
+    #form_sign {
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+    #form_sign input[type="email"],
+    #form_sign input[type="text"],
+    #form_sign input[type="password"]{
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:932px) {
+    .first {
+        background-color: rgba(50, 50, 50, .8);
+    }
+
+    .first .js {
+        color: yellow;
+    }
+
+    .first h1 {
+        color: white;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    .bar {
+        float: right;
+        margin-top: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+
+
+    .bar_t {
+        display: block;
+        width: 30px;
+        height: 3px;
+        border: 2px solid white;
+        background-color: white;
+        margin-bottom: 3px;
+        border-radius: 20px;
+    }
+
+    .bar_t_first{
+        position: relative;
+        transition:transform 0.6s;
+    }
+    .bar_t_second {
+        transition:transform 0.4s;
+       
+    }
+
+    .bar_t_last{
+        transition:opacity 0.1s;   
+    }
+
+    
+
+    /* @keyframes bar_first_i {
+        from {
+            top: 6px;
+            transform: rotate(45deg)
+            
+        }
+
+        to {
+            top: 0;
+            transform: rotate(0deg)
+        }
+    }
+
+    @keyframes bar_second_i {
+        from {
+            transform: rotate(-45deg)
+        }
+
+        to {
+            
+            transform: rotate(0deg)
+        }
+    }
+
+    @keyframes bar_last_i {
+        0% {
+            opacity: 0;
+        }
+
+        25%{
+            opacity: 0.5;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes bar_first{
+        from{top:0;transform:rotate(0deg)}
+        to{top:6px;transform:rotate(45deg)}
+    }
+
+    @keyframes bar_second {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(-45deg)
+        }
+    }
+
+    @keyframes bar_last {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    } */
+
+    .dis {
+        display: none;
+        height: 0px;
+        opacity: 0;
+        transition: 0.8s ease-in;
+        
+    }
+
+    .up{
+        
+        animation-name: scrollup;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+    }
+
+    
+
+    .active {
+        margin-top: 0px;
+        padding: 10px;
+        width: 100%;
+        float: none;
+        background-color: yellow;
+        transition: .5s ease-in;
+        animation-name: scrolldown;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+    }
+
+    .active li {
+
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+
+
+    .active li a {
+        text-decoration: none;
+        color: rgba(50, 50, 50, .8);
+        font-weight: bold;
+        transition:color 0.5s;
+    }
+
+    #form_sign {
+        margin: auto;
+    }
+
+    li a:hover{
+        color:white;
+    }
+
+    @keyframes scrolldown{
+        0%{
+            height: 0px;opacity: 0;
+        }
+        10%{
+            height: 50px;opacity: 0;
+        }
+        20%{
+            height: 100px;
+        }
+        30%{
+            height: 150px;
+        }
+        40%{
+            height: 200px;
+        }
+        50%{
+            height: 250px;
+        }
+
+        100%{
+            height: 300px;
+        }
+    }
+
+    @keyframes scrollup {
+        0% {
+            height: 300px;
+            
+        }
+
+        10% {
+            height: 250px;
+            
+        }
+
+        20% {
+            height: 200px;
+            opacity:0.8;
+        }
+
+        30% {
+            height: 150px;
+            opacity:0.6;
+        }
+
+        40% {
+            height: 100px;
+            opacity:0.4;
+        }
+
+        50% {
+            height: 50px;
+            opacity: 0.2;
+        }
+
+        100% {
+            height: 0px;
+            opacity: 0;
+        }
+    }
+}

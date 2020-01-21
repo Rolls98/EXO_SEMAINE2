@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JsCodeEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <header>
+        <div class="first">
+            <div class="logo">
+                <h1><span class="js">JS</span>CodeEasy</h1>
+            </div>
+            <div class="bar">
+                <span class="bar_t bar_t_first"></span>
+                <span class="bar_t bar_t_second"></span>
+                <span class="bar_t bar_t_last"></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <nav class="dis">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Tutoriels</a></li>
+                <li><a href="">Formations</a></li>
+                <li><a href="">LiveCoding</a></li>
+                <li><a href="">A Propos</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bg_main">
+         <div id="form_sign">
+             <form action="traitement.html">
+                 <h2>Create an Account : </h2><br>
+                 <label for="nom">Nom : </label><br>
+                 <input type="text" name="fname" class="fname" placeholder="Nom" required>
+                 <span class="errorMsg"></span>
+                 <label for="prenom">Prenom : </label><br>
+                 <input type="text" name="lname" class="lname" placeholder="Prenom" required><br>
+                 <span class="errorMsg"></span>
+                 <label for="mail">Adresse mail : </label><br>
+                 <input type="email" name="mail" placeholder="Adresse Email" required><br>
+                 <span class="errorMsg"></span>
+                 <label for="psd">Mot de passe : </label><br>
+                 <input type="password" name="psd" placeholder="Mot de passe">
+                 <span class="errorMsg"></span>
+                 <div class="checkpass">
+                    <p>votre mot de passe doit avoir au moins : </p>
+                    <ul>
+                        <li class="carac">8 Caractères</li>
+                        <li class="lettre_Maj">Une lettre Majuscule</li>
+                        <li class="lettre_Min">Une lettre muniscule</li>
+                        <li class="chiffre">Un chiffre </li>
+                    </ul>
+                 </div>
+                 <label for="prenom">Confirmer mdp : </label><br>
+                 <input type="password" name="cpsd" placeholder="Confirmer le mot de passe">
+                 <span class="errorMsg"></span><br>
+                 <input type="submit" value="Sign Up">
+            </form>
+    </div>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
